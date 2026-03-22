@@ -22,10 +22,10 @@
                 </button>
             </div>
             <div class="hidden lg:flex lg:gap-x-12">
-                <a href="#" class="text-sm/6 font-semibold text-white">About Me</a>
-                <a href="#" class="text-sm/6 font-semibold text-white">Skills</a>
-                <a href="#" class="text-sm/6 font-semibold text-white">Projects</a>
-                <a href="#" class="text-sm/6 font-semibold text-white">Contact Me</a>
+                <a href="#about" class="text-sm/6 font-semibold text-white">About Me</a>
+                <a href="#skills" class="text-sm/6 font-semibold text-white">Skills</a>
+                <a href="#projects" class="text-sm/6 font-semibold text-white">Projects</a>
+                <a href="#contact" class="text-sm/6 font-semibold text-white">Contact Me</a>
             </div>
 
             <div class="hidden lg:flex lg:flex-1 lg:justify-end">
@@ -55,14 +55,16 @@
                         <div class="mt-6 flow-root">
                             <div class="-my-6 divide-y divide-white/10">
                                 <div class="space-y-2 py-6">
-                                    <a href="#"
-                                        class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Product</a>
-                                    <a href="#"
-                                        class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Features</a>
-                                    <a href="#"
-                                        class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Marketplace</a>
-                                    <a href="#"
-                                        class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Company</a>
+                                    <a href="#about"
+                                        class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">About
+                                        Me</a>
+                                    <a href="#skills"
+                                        class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Skills</a>
+                                    <a href="#projects"
+                                        class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Projects</a>
+                                    <a href="#contact"
+                                        class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Contact
+                                        Me</a>
                                 </div>
                                 <div class="py-6">
                                     <a href="#"

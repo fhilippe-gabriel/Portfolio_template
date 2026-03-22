@@ -1,4 +1,5 @@
-<div class="bg-gray-900 ">
+{{-- Adicionamos o id="contact" --}}
+<div id="contact" class="bg-gray-900 ">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="px-4 sm:px-0">
             <h3 class="text-base/7 font-semibold text-white">Contact</h3>

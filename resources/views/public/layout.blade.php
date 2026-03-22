@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+{{-- Adicionado scroll-smooth para a navegação por âncoras ser suave --}}
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
     {{-- A diretiva @vite é injetada aqui no head para carregar o seu CSS/JS principal compilado (onde o Tailwind está configurado) --}}
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>

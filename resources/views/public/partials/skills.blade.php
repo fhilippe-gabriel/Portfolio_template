@@ -13,7 +13,8 @@
 
 
 
-<div class="bg-gray-900 py-24 sm:py-32">
+{{-- Adicionamos o id="skills" --}}
+<div id="skills" class="bg-gray-900 py-24 sm:py-32">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div class="mx-auto max-w-2xl lg:text-center">
             <h2 class="text-base/7 font-semibold text-indigo-400">Details skills</h2>
