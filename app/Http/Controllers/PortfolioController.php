@@ -3,16 +3,29 @@
 namespace App\Http\Controllers;
 
 use App\Models\about;
+use App\Models\contact;
+use App\Models\projects;
+use App\Models\skills;
 use Illuminate\Http\Request;
 
-class AboutController extends Controller
+class PortfolioController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        //
+        $about = about::all();
+        $skills = skills::all();
+        $projects = projects::all();
+        $contact = contact::all();
+
+        return view('public.layout', [
+            'about' => $about,
+            'skills' => $skills,
+            'projects' => $projects,
+            'contact' => $contact,
+        ]);
     }
 
     /**
@@ -34,7 +47,7 @@ class AboutController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(about $about)
+    public function show(string $id)
     {
         //
     }
@@ -42,7 +55,7 @@ class AboutController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(about $about)
+    public function edit(string $id)
     {
         //
     }
@@ -50,7 +63,7 @@ class AboutController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, about $about)
+    public function update(Request $request, string $id)
     {
         //
     }
@@ -58,7 +71,7 @@ class AboutController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(about $about)
+    public function destroy(string $id)
     {
         //
     }
