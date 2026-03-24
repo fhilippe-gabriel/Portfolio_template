@@ -13,9 +13,10 @@ return new class extends Migration
     {
         Schema::create('skills', function (Blueprint $table) {
             $table->id();
-            $table->string('title');
+            $table->string('title')->nullable();
             $table->string('description')->nullable();
-            $table->string('details');
+            $table->string('title_details')->nullable();
+            $table->string('details')->nullable();
 
             $table->string('details_icons')->nullable();
             $table->string('icons')->nullable();
