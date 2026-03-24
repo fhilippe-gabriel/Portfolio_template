@@ -16,7 +16,7 @@
 
     {{-- A diretiva @include importa uma view simples como um "bloco" (ex: resources/views/public/partials/navbar.blade.php) --}}
     @include('public.partials.navbar')
-    @include('public.partials.aboute')
+    @include('public.partials.about')
     @include('public.partials.skills')
     @include('public.partials.projects')
     @include('public.partials.contact')

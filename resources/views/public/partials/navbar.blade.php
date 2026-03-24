@@ -89,14 +89,19 @@
         <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
 
             <div class="text-center">
-                <h1 class="text-5xl font-semibold tracking-tight text-balance text-white sm:text-7xl">Eiusmod eu amet et
-                    pariatur exercitation nostrud sunt consequat.</h1>
-                <p class="mt-8 text-lg font-medium text-pretty text-gray-400 sm:text-xl/8">Anim aute id magna aliqua ad
-                    ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat.
-                </p>
+                @foreach ($about as $abouts)
+                    <h1 class="text-5xl font-semibold tracking-tight text-balance text-white sm:text-7xl">
+                        {{ $abouts->title }}
+                    </h1>
+                    <p class="mt-8 text-lg font-medium text-pretty text-gray-400 sm:text-xl/8">
+                        {{ $abouts->subtitle }}
+
+                    </p>
+                @endforeach
+
                 <div class="mt-10 flex items-center justify-center gap-x-6">
 
-                    <a href="#" class="text-7xl font-semibold text-white"><svg xmlns="http://www.w3.org/2000/svg"
+                    <a href="#about" class="text-7xl font-semibold text-white"><svg xmlns="http://www.w3.org/2000/svg"
                             fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />

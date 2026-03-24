@@ -18,11 +18,21 @@
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div class="mx-auto max-w-2xl lg:text-center">
             <h2 class="text-base/7 font-semibold text-indigo-400">Details skills</h2>
-            <p class="mt-2 text-4xl font-semibold tracking-tight text-pretty text-white sm:text-5xl lg:text-balance">
-                Consectetur sit ex veniam dolore deserunt cillum nostrud adipisicing eu tempor ut nostrud.
-            </p>
-            <p class="mt-6 text-lg/8 text-gray-300">Quis tellus eget adipiscing convallis sit sit eget aliquet quis.
-                Suspendisse eget egestas a elementum pulvinar et feugiat blandit at. In mi viverra elit nunc.</p>
+            @foreach ($skills as $skill)
+                <p
+                    class="mt-2 text-4xl font-semibold tracking-tight text-pretty text-white sm:text-5xl lg:text-balance">
+
+                    {{ $skill->title }}
+
+                </p>
+                <p class="mt-6 text-lg/8 text-gray-300">
+
+                    {{ $skill->description }}
+
+
+                </p>
+            @endforeach
+
         </div>
         <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
             <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
@@ -39,8 +49,9 @@
                         </div>
                         lorem ipsum
                     </dt>
-                    <dd class="mt-2 text-base/7 text-gray-400">Morbi viverra dui mi arcu sed. Tellus semper adipiscing
-                        suspendisse semper morbi. Odio urna massa nunc massa.</dd>
+                    <dd class="mt-2 text-base/7 text-gray-400">
+                        {{ $skill->description }}
+                    </dd>
                 </div>
 
             </dl>
