@@ -5,16 +5,16 @@
         </span>
         <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-body sm:mt-0">
             <li>
-                <a href="#" class="hover:underline text-gray-300 hover:text-white me-4 md:me-6">About</a>
+                <a href="#about" class="hover:underline text-gray-300 hover:text-white me-4 md:me-6">About</a>
             </li>
             <li>
-                <a href="#" class="hover:underline me-4 text-gray-300 hover:text-white md:me-6">Privacy Policy</a>
+                <a href="#skills" class="hover:underline me-4 text-gray-300 hover:text-white md:me-6">Skills</a>
             </li>
             <li>
-                <a href="#" class="hover:underline me-4 text-gray-300 hover:text-white md:me-6">Licensing</a>
+                <a href="#projects" class="hover:underline me-4 text-gray-300 hover:text-white md:me-6">Projects</a>
             </li>
             <li>
-                <a href="#" class="hover:underline text-gray-300">Contact</a>
+                <a href="#contact" class="hover:underline text-gray-300">Contact</a>
             </li>
         </ul>
     </div>
