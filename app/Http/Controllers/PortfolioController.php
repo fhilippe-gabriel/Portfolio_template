@@ -55,9 +55,19 @@ class PortfolioController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit()
     {
-        //
+        $about = about::all();
+        $skills = skills::all();
+        $projects = projects::all();
+        $contact = contact::all();
+
+        return view('private.edit', [
+            'about' => $about,
+            'skills' => $skills,
+            'projects' => $projects,
+            'contact' => $contact,
+        ]);
     }
 
     /**
