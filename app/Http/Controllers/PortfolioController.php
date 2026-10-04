@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\about;
-use App\Models\contact;
-use App\Models\projects;
-use App\Models\skills;
+use App\Models\About;
+use App\Models\Contact;
+use App\Models\Projects;
+use App\Models\Skills;
 use Illuminate\Http\Request;
 
 class PortfolioController extends Controller
@@ -15,19 +15,19 @@ class PortfolioController extends Controller
      */
     public function index()
     {
-        $about = about::all();
-        $skills = skills::all();
-        $projects = projects::all();
-        $contact = contact::all();
+        $abouts = About::all();
+        $skills = Skills::all();
+        $projects = Projects::all();
+        $contact = Contact::all();
 
         return view('public.layout', [
-            'about' => $about,
+            'about' => $abouts,
+            'abouts' => $abouts,
             'skills' => $skills,
             'projects' => $projects,
             'contact' => $contact,
         ]);
     }
-
     /**
      * Show the form for creating a new resource.
      */

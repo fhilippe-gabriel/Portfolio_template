@@ -31,7 +31,7 @@
 
 
                 </p>
-            @endforeach
+
 
         </div>
         <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
@@ -53,7 +53,7 @@
                         {{ $skill->description }}
                     </dd>
                 </div>
-
+                @endforeach
             </dl>
         </div>
     </div>

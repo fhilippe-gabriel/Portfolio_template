@@ -2,7 +2,7 @@
 
 namespace Database\Seeders;
 
-use App\Models\about;
+use App\Models\About;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -13,6 +13,6 @@ class AboutSeeder extends Seeder
      */
     public function run(): void
     {
-        about::factory(1)->create();
+        About::factory(1)->create();
     }
 }

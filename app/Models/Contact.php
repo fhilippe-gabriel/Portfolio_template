@@ -3,17 +3,14 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-
 use Illuminate\Database\Eloquent\Model;
 
-class Projects extends Model
+class Contact extends Model
 {
     use HasFactory;
 
     protected $fillable = [
-        'title',
-        'description',
-        'link',
-        'imagem',
+        'email_contact',
+        'social_contact',
     ];
 }

@@ -5,20 +5,17 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class About extends Model
+class Skills extends Model
 {
     use HasFactory;
 
-    /**
-     * Get the attributes that should be cast.
-     *
-     * @return array<string, string>
-     */
-
     protected $fillable = [
         'title',
-        'subtitle',
         'description',
-        'user_imagem',
+        'title_details',
+        'details',
+        'details_icons',
+        'icons',
+
     ];
 }
