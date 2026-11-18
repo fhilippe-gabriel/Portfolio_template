@@ -89,15 +89,17 @@
         <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
 
             <div class="text-center">
-                @foreach ($about as $abouts)
+                @php
+                    $aboutItem = $about instanceof \Illuminate\Support\Collection ? ($about->first() ?? new \App\Models\About()) : $about;
+                @endphp
+                @if ($aboutItem)
                     <h1 class="text-5xl font-semibold tracking-tight text-balance text-white sm:text-7xl">
-                        {{ $abouts->title }}
+                        {{ $aboutItem->title }}
                     </h1>
                     <p class="mt-8 text-lg font-medium text-pretty text-gray-400 sm:text-xl/8">
-                        {{ $abouts->subtitle }}
-
+                        {{ $aboutItem->subtitle }}
                     </p>
-                @endforeach
+                @endif
 
                 <div class="mt-10 flex items-center justify-center gap-x-6">
 

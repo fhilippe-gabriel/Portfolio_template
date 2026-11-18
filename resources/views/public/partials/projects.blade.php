@@ -9,8 +9,9 @@
 
 
             <div class="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:space-y-0 lg:gap-x-6">
-                <div class="group relative">
-                    @foreach ($projects as $project)
+                @foreach ($projects as $project)
+                    <div class="group relative">
+
                         <img src="{{ $project->imagem }}"
                             alt="Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug."
                             class="w-full rounded-lg bg-white object-cover group-hover:opacity-75 max-sm:h-80 sm:aspect-2/1 lg:aspect-square" />
@@ -27,9 +28,9 @@
 
 
                         </p>
-                    @endforeach
+                    </div>
+                @endforeach
 
-                </div>
 
             </div>
         </div>
